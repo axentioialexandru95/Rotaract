@@ -1,6 +1,259 @@
+//Basic
+html
+	overflow-x: hidden
+
 body
-	height: 12000px
 
 
-h1 
-	font-weight: 800
+
+.container-fluid
+	padding: 0
+	margin: 0
+// Screen-sizes
+$mobile: 360px
+$tablet: 768px
+$desktop: 1280px
+ 
+// Colors
+$primary-color: #D91B5C
+
+
+
+// Navbar
+.navbar 
+	background-color: transparentize(black, 0.9) 
+	border-bottom: none
+	box-shadow: 0px 3px 10px rgba(black, 0.5)
+	height: 80px
+	.navbar-right
+
+		padding-right: 300px
+
+		a
+			font-size: 1.78rem
+			margin-top: 15px
+			color: white !important
+
+			&:hover
+				border-bottom: 2px solid white
+				padding-bottom: 10px
+
+	.active
+		a
+			background-color: transparent !important
+			border-bottom: 1px solid $primary-color
+			padding-bottom: 10px
+
+
+
+	.navbar-brand
+		img
+			margin-left: 300px
+			width: 150px
+			height: 50px
+
+
+.big
+	transition: 0.5s all ease-in-out
+	background-color: $primary-color 
+	height: 80px
+	.navbar-brand
+		transition: 0.5s all ease-in-out
+		font-size: 25px
+	.active
+		a
+			background-color: transparent !important
+			border-bottom: 2px solid white
+
+// Header
+.header
+	position: relative
+	height: 500px
+	background:
+		size: cover
+		image: url(../images/header.jpeg)
+		attachment: fixed
+
+	.header-text
+		margin-top: -20px
+		padding-top: 130px
+		color: white
+		text-align: center
+
+
+		h3
+			padding-left: 20vw
+			padding-right: 20vw
+
+	button
+		transition: all 0.5s ease-in-out
+		background-color: rgba($primary-color, 0.5)
+		border: none
+		border-radius: 0
+
+		&:hover
+			background-color: $primary-color
+
+
+// Learn
+.learn
+	margin-top: 50px
+
+	.fa 
+		transition: all 0.5s ease-in-out
+		margin-top: 50px
+		color: $primary-color
+		border: 2px dashed $primary-color
+		padding: 20px
+
+		&:hover
+			background-color: $primary-color
+			color: white
+	hr 
+		border-top: 1px solid $primary-color
+
+
+// Projects
+.projects
+	margin-top: 50px
+	height: 450px
+	background-color: rgba(black, 0.7)
+	h1 
+		padding-top: 30px
+		color: white
+	.project
+		transition: 0.5s all ease-in-out
+		margin-top: 30px
+		display: flex
+		justify-content: center
+		img 
+			opacity: 0.8
+			width: 350px
+			height: 260px
+
+			&:hover
+				opacity: 1
+
+		&:hover
+			transform: scale(1.03)
+
+
+
+// Register
+.register 
+	box-shadow: inset 0px 3px 5px black
+	position: relative
+	height: 300px
+	background:
+		image: url(../images/project-1.jpg)
+		position: center
+		size: cover
+		attachment: fixed
+
+	.overlay 
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		height: 300px
+		background-color: rgba(black, 0.5)
+	button
+		transition: 0.3s all ease-in-out
+		position: absolute
+		top: 50%
+		margin-top: -30px
+		left: 47%
+		background-color: transparent
+		border: 2px solid $primary-color
+		border-radius: 0
+		z-index: 1
+		font-size: 2.3rem
+
+		&:hover
+			border: 2px solid $primary-color
+			background-color: $primary-color
+
+
+// Members
+.members
+	margin-top: 30px 
+.slider 
+	margin-top: 50px
+	padding-left: 25px
+
+	img 
+	  border-radius: 140px
+	  width: 280px
+	  height: 280px
+
+.slick-prev,
+.slick-next 
+  position: absolute
+  display: block
+  width: 50px
+  height: 60px
+  line-height: 0
+  font-size: 0
+  cursor: pointer
+  background: transparent
+  color: transparent
+  border: none
+  outline: none
+  padding: 0
+  top: calc(50% - 60px / 2)
+
+.slick-prev 
+  left: -50px
+  background: url("http://image.flaticon.com/icons/svg/126/126492.svg") no-repeat
+  background-size: 50px 60px
+
+.slick-next 
+  right: -50px
+  background: url("http://image.flaticon.com/icons/svg/126/126490.svg") no-repeat
+  background-size: 50px 60px
+
+
+// Partners
+.partners
+	display: flex
+	justify-content: center
+	margin-top: 70px
+	height: 300px
+	background: rgba(black, 0.5)
+	img 
+		margin-top: 90px
+		margin-left: 25px
+		margin-right: 25px
+		width: 250px
+		height: 100px
+		filter: grayscale(100%)
+
+//
+.footer
+	color: white
+	height: 368px
+	background-color: rgba(black, 0.8)
+
+	img 
+		padding-top: 60px
+		width: 300px
+		height: 150px
+
+	h3
+		padding-top: 40px
+	p 
+		text-align: left
+	a 
+		transition: 0.5s all ease-in-out
+		color: white
+		&:hover
+			color: $primary-color
+
+// Copyright
+.copyright
+	background-color: rgba(black, 0.4)
+	p 
+		font-size: 1.6rem
+		text-align: center
+		margin-top: 17px

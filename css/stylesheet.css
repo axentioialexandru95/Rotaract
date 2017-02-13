@@ -1,5 +1,215 @@
-body {
-  height: 12000px; }
+html {
+  overflow-x: hidden; }
 
-h1 {
-  font-weight: 800; }
+.container-fluid {
+  padding: 0;
+  margin: 0; }
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-bottom: none;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+  height: 80px; }
+  .navbar .navbar-right {
+    padding-right: 300px; }
+    .navbar .navbar-right a {
+      font-size: 1.78rem;
+      margin-top: 15px;
+      color: white !important; }
+      .navbar .navbar-right a:hover {
+        border-bottom: 2px solid white;
+        padding-bottom: 10px; }
+  .navbar .active a {
+    background-color: transparent !important;
+    border-bottom: 1px solid #D91B5C;
+    padding-bottom: 10px; }
+  .navbar .navbar-brand img {
+    margin-left: 300px;
+    width: 150px;
+    height: 50px; }
+
+.big {
+  transition: 0.5s all ease-in-out;
+  background-color: #D91B5C;
+  height: 80px; }
+  .big .navbar-brand {
+    transition: 0.5s all ease-in-out;
+    font-size: 25px; }
+  .big .active a {
+    background-color: transparent !important;
+    border-bottom: 2px solid white; }
+
+.header {
+  position: relative;
+  height: 500px;
+  background-size: cover;
+  background-image: url(../images/header.jpeg);
+  background-attachment: fixed; }
+  .header .header-text {
+    margin-top: -20px;
+    padding-top: 130px;
+    color: white;
+    text-align: center; }
+    .header .header-text h3 {
+      padding-left: 20vw;
+      padding-right: 20vw; }
+  .header button {
+    transition: all 0.5s ease-in-out;
+    background-color: rgba(217, 27, 92, 0.5);
+    border: none;
+    border-radius: 0; }
+    .header button:hover {
+      background-color: #D91B5C; }
+
+.learn {
+  margin-top: 50px; }
+  .learn .fa {
+    transition: all 0.5s ease-in-out;
+    margin-top: 50px;
+    color: #D91B5C;
+    border: 2px dashed #D91B5C;
+    padding: 20px; }
+    .learn .fa:hover {
+      background-color: #D91B5C;
+      color: white; }
+  .learn hr {
+    border-top: 1px solid #D91B5C; }
+
+.projects {
+  margin-top: 50px;
+  height: 450px;
+  background-color: rgba(0, 0, 0, 0.7); }
+  .projects h1 {
+    padding-top: 30px;
+    color: white; }
+  .projects .project {
+    transition: 0.5s all ease-in-out;
+    margin-top: 30px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .projects .project img {
+      opacity: 0.8;
+      width: 350px;
+      height: 260px; }
+      .projects .project img:hover {
+        opacity: 1; }
+    .projects .project:hover {
+      -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+      transform: scale(1.03); }
+
+.register {
+  box-shadow: inset 0px 3px 5px black;
+  position: relative;
+  height: 300px;
+  background-image: url(../images/project-1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
+  .register .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.5); }
+  .register button {
+    transition: 0.3s all ease-in-out;
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    left: 47%;
+    background-color: transparent;
+    border: 2px solid #D91B5C;
+    border-radius: 0;
+    z-index: 1;
+    font-size: 2.3rem; }
+    .register button:hover {
+      border: 2px solid #D91B5C;
+      background-color: #D91B5C; }
+
+.members {
+  margin-top: 30px; }
+
+.slider {
+  margin-top: 50px;
+  padding-left: 25px; }
+  .slider img {
+    border-radius: 140px;
+    width: 280px;
+    height: 280px; }
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 60px;
+  line-height: 0;
+  font-size: 0;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  top: calc(50% - 60px / 2); }
+
+.slick-prev {
+  left: -50px;
+  background: url("http://image.flaticon.com/icons/svg/126/126492.svg") no-repeat;
+  background-size: 50px 60px; }
+
+.slick-next {
+  right: -50px;
+  background: url("http://image.flaticon.com/icons/svg/126/126490.svg") no-repeat;
+  background-size: 50px 60px; }
+
+.partners {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 70px;
+  height: 300px;
+  background: rgba(0, 0, 0, 0.5); }
+  .partners img {
+    margin-top: 90px;
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 250px;
+    height: 100px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); }
+
+.footer {
+  color: white;
+  height: 368px;
+  background-color: rgba(0, 0, 0, 0.8); }
+  .footer img {
+    padding-top: 60px;
+    width: 300px;
+    height: 150px; }
+  .footer h3 {
+    padding-top: 40px; }
+  .footer p {
+    text-align: left; }
+  .footer a {
+    transition: 0.5s all ease-in-out;
+    color: white; }
+    .footer a:hover {
+      color: #D91B5C; }
+
+.copyright {
+  background-color: rgba(0, 0, 0, 0.4); }
+  .copyright p {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 17px; }
